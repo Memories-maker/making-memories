@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="logo.png">
 <meta name="description" content="Making Memories — thoughtful gifts, beautiful moments, and memorable keepsakes.">
 <title>Making Memories | Thoughtful Gifts, Beautiful Moments</title>
 <style>
@@ -21,8 +22,7 @@ button{font:inherit}
 .topbar{background:var(--brown);color:#fff;padding:8px;text-align:center;font-size:12px;letter-spacing:.5px}
 nav{position:sticky;top:0;z-index:50;background:rgba(255,253,249,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
 .nav-inner{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
-.brand{font-size:25px;letter-spacing:2px}
-.brand small{display:block;font:10px Arial,sans-serif;letter-spacing:3px;color:var(--gold);text-align:center;margin-top:-2px}
+.brand{display:flex;align-items:center;line-height:1}.brand-logo{width:86px;height:62px;object-fit:contain;display:block}.brand small{display:block;font:10px Arial,sans-serif;letter-spacing:3px;color:var(--gold);text-align:center;margin-top:-2px}
 .nav-links{display:flex;gap:27px;font-size:13px;color:var(--muted)}
 .nav-links a:hover{color:var(--rose)}
 .menu{display:none;background:none;border:0;font-size:25px;color:var(--brown)}
@@ -95,7 +95,7 @@ footer{background:#332b27;color:#e8ded7;padding:50px 0 25px}
 
 <nav>
   <div class="container nav-inner">
-    <a class="brand" href="#home">MAKING MEMORIES<small>GIFTS & GREETINGS</small></a>
+    <a class="brand" href="#home" aria-label="Making Memories home"><img class="brand-logo" src="logo.png" alt="Making Memories logo"></a>
     <div class="nav-links">
       <a href="#home">Home</a><a href="#collections">Collections</a><a href="#shop">Shop</a>
       <a href="#custom">Custom Gifts</a><a href="#about">About</a><a href="#contact">Contact</a>
